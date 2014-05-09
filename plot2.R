@@ -7,5 +7,5 @@ combTime <- paste0(data$Date, " ", data$Time)
 time <- strptime(combTime, format ="%d/%m/%Y %H:%M:%S")
 
 png(file="plot2.png")
-plot(time, GAP, type = "l", ylab = "Global Active Power (kilowatts)")
+plot(time, GAP, type = "l", xlab="", ylab = "Global Active Power (kilowatts)")
 dev.off()
